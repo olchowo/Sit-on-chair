@@ -1,0 +1,94 @@
+.section__costs {
+	width: 100%;
+	height: 720px;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 30px 70px 70px 70px;
+	padding: 70px;
+	background-color: rgb(241, 241, 241);
+}
+
+h2 {
+	font-family: $font;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	margin-bottom: 6px;
+}
+
+.big_underbar {
+	height: 8px;
+	width: 333px;
+	background-color: $color;
+}
+	
+.cost_tabs {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding-top: 40px;
+	
+	article.cost {
+		width: 333px;
+		height: 490px;
+		border: 1px solid lightgray;
+		background-color: white;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		
+		.round_top {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: lightgray;
+			border: 1px solid lightgray;
+			box-shadow: inset 0 0 0 12px white;
+			margin: -35px auto 0;
+		}
+		
+		.plan {
+			height: 50px;
+			font-family: $font;
+			color: $color;
+			font-size: 20px;
+			text-transform: uppercase;
+			margin: 10px 0;
+		}
+		
+		.cost_sticker {
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+			border: 1px solid lightgray;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			font-family: $font;
+			color: lightgrey;
+			
+			.price {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				
+				.bignum {
+					font-size: 36px;
+					font-weight: bold;
+				}
+				
+				.littlenum {
+					font-weight: bold;
+				}
+			}
+			.pln {
+				padding-top: 6px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+	}
+}
+	
