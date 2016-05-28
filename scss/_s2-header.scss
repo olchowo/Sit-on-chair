@@ -21,7 +21,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 		color: $color;
 	}
 	
-	.header__text {
+	.header_text {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -47,7 +47,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 			text-align: center;
 		}
 		
-		a {
+		.header-button {
 			@extend %button;
 			font-size: 20px;
 			padding: 10px 30px;

@@ -1,0 +1,76 @@
+.s5_contact {
+	min-height: 520px;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 70px;
+	padding-top: 30px;
+}
+
+.contact_form {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact_inputs {
+	display: flex;
+	flex-flow: column nowrap;
+	
+	input {
+		width: 680px;
+		height: 45px;
+		font: 20px $font;
+		border: 1px solid lighten($color, 30);
+		padding-left: 10px;
+		margin-bottom: 15px;
+	}
+	
+	textarea {
+		width: 680px;
+		font: 20px $font;
+		border: 1px solid lighten($color, 30);
+		padding: 10px;
+	}
+}
+
+.contact_sending {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 340px;
+	
+	
+	input[type=checkbox] {
+    	display: none;
+  	}
+	
+  	input[type=checkbox] {
+       background-color: hotpink;
+       height: 30px;
+       width: 30px;
+       display:inline-block;
+       padding: 0 0 0 0px;
+   }
+   
+	input[type=checkbox]:checked {
+        background-color: crimson;
+        height: 30px;
+        width: 30px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+    }
+	
+	/*
+	#agree {
+		width: 30px;
+		height: 30px;
+		border: 1px solid lighten($color, 30);
+		background-color: white;
+		background-image: url(../imagesOk/form_ok.jpg);
+		background-position: center;
+		background-size: contain;
+	}
+	*/
+}
+

@@ -26,3 +26,18 @@ body {
 	font-family: $font;
 	text-transform: uppercase;
 }
+
+h2 {
+	font-family: $font;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	margin-bottom: 6px;
+}
+
+.big_underbar {
+	height: 8px;
+	width: 333px;
+	background-color: $color;
+	margin-bottom: 30px;
+}

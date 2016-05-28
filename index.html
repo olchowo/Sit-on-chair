@@ -1,18 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    
-     <link rel="stylesheet" href="css/style.css">
-     <link href='https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-2.2.1.min.js"></script>
   <script src="js/app.js"></script>
+  <title>Sit on chair</title>
 </head>
 <body>
-
+	<nav class="menu main_width">
+		<p class="title">Sit <span>on</span> chair</p>
+		<ul class="menu_li">
+			<li class="oFirmie"><a href="#">About us</a>
+				<ul class="oFirmie_podmenu">
+					<li>News</li>
+					<li>Our team</li>
+					<li>History</li>
+				</ul>
+			</li>
+			<li class="galeria"><a href="#">Gallery</a></li>
+			<li class="kontakt_header"><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+  
+	<header class="m-header main_width">
+		<a href="#" class="arrow_left">&lt;</a>
+		<div class="header-slider">
+			<ul class="chair-slides">
+				<li><img src="./imagesOk/black_chair.png"></li>
+				<li><img src="./imagesOK/orange.png"></li>
+				<li><img src="./imagesOK/red.png"></li>
+			</ul>
+		</div>
+		<div class="header_text">
+			<h1>Sit <span>on</span> our <span>chair</span>
+        </h1>
+			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+          <button class="header-button">Read more</button>
+		</div>
+		<a href="#" class="arrow_right">&gt;</a>
+	</header>
+  
+	<section class="s3_products main_width">
+		<article class="s3_item">
+			<img src="./imagesOK/box1_img.jpg">
+			<h3>Chair CLAIR</h3>
+			<div class="little_underbar"></div>
+		</article>
+		<article class="s3_item">
+			<img src="./imagesOK/box2_img.jpg">
+			<h3>Chair MARGARITA</h3>
+			<div class="little_underbar"></div>
+		</article>
+		<article class="s3_desc">
+			<h3>Lorem ipsum</h3>
+			<div class="little_underbar"></div>
+			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
+			<p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+		</article>
+	</section>
 	
+	<section class="s4_costs main_width">
+		<h2>Costs</h2>
+		<div class="big_underbar"></div>
+		<div class="cost_tabs">
+			<article class="cost">
+				<div class="round_top"></div>
+				<p class="plan">Basic plan</p>
+				<div class="cost_sticker">
+					<p class="price">85<sup>99</sup></p>
+					<p class="pln">PLN/month</p>
+				</div>
+				<div class="cost_options">
+					<p class="cost_option_alter">Purchase + delivery</p>
+					<p>Service</p>
+				</div>
+				<button class="cost_button">Add</button>
+			</article>
+   
+			<article class="cost alter_cost">
+				<div class="round_top"></div>
+				<p class="plan">Standard plan</p>
+				<div class="cost_sticker">
+					<p class="price">95<sup>99</sup></p>
+					<p class="pln">PLN/month</p>
+				</div>
+				<div class="cost_options">
+					<p>Purchase + delivery</p>
+					<p>Service</p>
+					<p>Guarantee 5 years</p>
+				</div>
+				<button class="cost_button">Add</button>
+			</article>
 
+			<article class="cost">
+				<div class="round_top"></div>
+				<p class="plan">Advanced plan</p>
+				<div class="cost_sticker">
+					<p class="price">211<sup>00</sup></p>
+					<p class="pln">PLN/month</p>
+				</div>
+				<div class="cost_options">
+					<p>Purchase + delivery</p>
+					<p>Service</p>
+					<p>Guarantee 5 years</p>
+					<p>Designer's tips</p>
+				</div>
+				<button class="cost_button">Add</button>
+			</article>
+        </div>
+	</section>
+  
+  <!--
+  <section class="main_width form_chair">
+    <p class="kontakt">SKOMPONUJ SWOJE KRZESŁO</p>
+    <p class="kontakt_podkreslenie"></p>
+    <div class="formularz">
+      <form class="form">
+          <select name="chair_type" id="model">
+          <option value="0">Wybierz model</option>
+          <option value="1" id="clair1">Clair</option>
+          <option value="2" id="margarita">Margarita</option>
+          <option value="3" id="selena">Selena</option>
+        </select>
+         <select name="chair_color">
+           <option value="0">Wybierz color</option>
+          <option value="1">Red</option>
+          <option value="2">Hot pink</option>
+          <option value="3">Orange</option>
+        </select>
+        <select name="chair_model">
+          <option value="0">Wybierz materiał</option>
+          <option value="1">Lorem</option>
+          <option value="2">Lorem1</option>
+          <option value="3">Lorem2</option>
+        </select>
+      </form>
+      <img src="image/red.png" class="img_red_chair chair2">
+    
+      <div class="tabela">
+    
+        <table>
+           <thead>
+             <td class="kreska" id="twoj_fotel">Twój Fotel<td>
+             <td></td>
+          </thead>
+          <tfoot>
+            <td>SUMA</td>
+            <td></td>
+          </tfoot>
+          <tr>
+            <td  class="kreska"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td  class="kreska"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="kreska"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="trans">
+        <input type="checkbox" id="transport">
+        <label for="transport">Transport</label>
+      </div>
+    </div>
+  </section>
+  -->
+  
+	<section class="s5_contact main_width">
+		<h2>Contact</h2>
+		<div class="big_underbar"></div>
+		<form class="contact_form">
+			<fieldset class="contact_inputs">
+				<input class="pola" type="text" name="name" placeholder="Name">
+				<input class="pola" type="text" name="email" placeholder="Email">
+				<textarea cols="46" rows="6" placeholder="Message"></textarea>
+			</fieldset>
+			<fieldset class="contact_sending">
+				<img src="./imagesOK/red_chair.png">
+				<label>
+					<input type="checkbox" id="agree">
+					I agree to the processing of personal data
+				</label>
+				<button class="contact_button">Send</button>
+			</fieldset>
+		</form>
+	</section>
+
+   <footer>
+    <div class="copyright">
+      <p>Copyright 2014 | All Rights Reserved. -Sit On Chair</p>
+      <p>
+        <a href="#"><img id="flickr" src="image/pobrane.png"></a>
+        <a href="#"><img id="vimeo" src="image/vimeo-icon.png"></a>
+        <a href="#"><img id="pinterest" src="image/pinterest.png"></a>
+        <a href="#"><img src="http://wisdomwayscenter.org/uploads/images/Social%20Media%20Icons/twitter.png" id="tweeter"></a>
+      </p>
+      <p id="footter_sitOn">SIT <b>ON</b> CHAIR</p>
+    </div>
+  </footer>
 </body>
 </html>

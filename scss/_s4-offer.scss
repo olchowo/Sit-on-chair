@@ -1,26 +1,14 @@
-.section__costs {
+.s4_costs {
 	width: 100%;
 	height: 720px;
 	display: flex;
 	flex-flow: column nowrap;
-	padding: 30px 70px 70px 70px;
 	padding: 70px;
+	padding-top: 30px;
 	background-color: rgb(241, 241, 241);
 }
 
-h2 {
-	font-family: $font;
-	text-transform: uppercase;
-	font-size: 20px;
-	color: black;
-	margin-bottom: 6px;
-}
 
-.big_underbar {
-	height: 8px;
-	width: 333px;
-	background-color: $color;
-}
 	
 .cost_tabs {
 	display: flex;
@@ -58,8 +46,8 @@ h2 {
 		}
 		
 		.cost_sticker {
-			width: 110px;
-			height: 110px;
+			width: 120px;
+			height: 120px;
 			border-radius: 50%;
 			border: 1px solid lightgray;
 			display: flex;
@@ -67,26 +55,29 @@ h2 {
 			justify-content: center;
 			align-items: center;
 			font-family: $font;
-			color: lightgrey;
 			
 			.price {
 				display: flex;
-				flex-flow: row nowrap;
+				//flex-flow: row nowrap;
 				justify-content: center;
+				font-size: 36px;
+				font-weight: bold;
+				color: lightgray;
+				//border: 1px solid hotpink;
 				
-				.bignum {
-					font-size: 36px;
-					font-weight: bold;
-				}
-				
-				.littlenum {
-					font-weight: bold;
+				sup {
+					font-size: 40%;
+					vertical-align: super;
+					position: relative;
+					top: 0.4em;
 				}
 			}
+			
 			.pln {
-				padding-top: 6px;
 				text-transform: uppercase;
 				font-weight: bold;
+				color: lightgray;
+				//border: 1px solid hotpink;
 			}
 		}
 	}
