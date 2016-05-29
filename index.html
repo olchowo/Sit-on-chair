@@ -8,19 +8,22 @@
   <script src="js/app.js"></script>
   <title>Sit on chair</title>
 </head>
+
 <body>
-	<nav class="menu main_width">
-		<p class="title">Sit <span>on</span> chair</p>
-		<ul class="menu_li">
-			<li class="oFirmie"><a href="#">About us</a>
-				<ul class="oFirmie_podmenu">
-					<li>News</li>
-					<li>Our team</li>
-					<li>History</li>
-				</ul>
+	<nav class="s1_top main_width">
+		<p class="top_logo">Sit <span>on</span> chair</p>
+		<ul class="top_navi">
+			<li class="navi_about"><a href="#">About us</a>
+				<div class="about_menu">
+					<ul>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Our team</a></li>
+						<li><a href="#">History</a></li>
+					</ul>
+				</div>
 			</li>
-			<li class="galeria"><a href="#">Gallery</a></li>
-			<li class="kontakt_header"><a href="#">Contact</a></li>
+			<li class="navi_gallery"><a href="#">Gallery</a></li>
+			<li class="navi_contact"><a href="#">Contact</a></li>
 		</ul>
 	</nav>
   
@@ -29,14 +32,16 @@
 		<div class="header-slider">
 			<ul class="chair-slides">
 				<li><img src="./imagesOk/black_chair.png"></li>
+				<!--
 				<li><img src="./imagesOK/orange.png"></li>
 				<li><img src="./imagesOK/red.png"></li>
+				-->
 			</ul>
 		</div>
 		<div class="header_text">
 			<h1>Sit <span>on</span> our <span>chair</span>
         </h1>
-			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a&nbsp;pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a. ultricis porta urna.</p>
           <button class="header-button">Read more</button>
 		</div>
 		<a href="#" class="arrow_right">&gt;</a>
@@ -45,19 +50,23 @@
 	<section class="s3_products main_width">
 		<article class="s3_item">
 			<img src="./imagesOK/box1_img.jpg">
-			<h3>Chair CLAIR</h3>
-			<div class="little_underbar"></div>
+			<div class="article_title">
+				<h3>Chair CLAIR</h3>
+				<div class="little_underbar"></div>
+			</div>
 		</article>
 		<article class="s3_item">
 			<img src="./imagesOK/box2_img.jpg">
-			<h3>Chair MARGARITA</h3>
-			<div class="little_underbar"></div>
+			<div class="article_title">
+				<h3>Chair MARGARITA</h3>
+				<div class="little_underbar"></div>
+			</div>
 		</article>
 		<article class="s3_desc">
 			<h3>Lorem ipsum</h3>
 			<div class="little_underbar"></div>
 			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
-			<p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+			<p>Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a. ultricis porta urna.</p>
 		</article>
 	</section>
 	
@@ -72,10 +81,10 @@
 					<p class="price">85<sup>99</sup></p>
 					<p class="pln">PLN/month</p>
 				</div>
-				<div class="cost_options">
-					<p class="cost_option_alter">Purchase + delivery</p>
-					<p>Service</p>
-				</div>
+				<ul class="plan_options">
+					<li>Purchase + delivery</li>
+					<li>Service</li>
+				</ul>
 				<button class="cost_button">Add</button>
 			</article>
    
@@ -86,27 +95,27 @@
 					<p class="price">95<sup>99</sup></p>
 					<p class="pln">PLN/month</p>
 				</div>
-				<div class="cost_options">
-					<p>Purchase + delivery</p>
-					<p>Service</p>
-					<p>Guarantee 5 years</p>
-				</div>
+				<ul class="plan_options">
+					<li>Purchase + delivery</li>
+					<li>Service</li>
+					<li>Warranty 5 years</li>
+				</ul>
 				<button class="cost_button">Add</button>
 			</article>
 
 			<article class="cost">
 				<div class="round_top"></div>
-				<p class="plan">Advanced plan</p>
+				<p class="plan">Advance plan</p>
 				<div class="cost_sticker">
 					<p class="price">211<sup>00</sup></p>
 					<p class="pln">PLN/month</p>
 				</div>
-				<div class="cost_options">
-					<p>Purchase + delivery</p>
-					<p>Service</p>
-					<p>Guarantee 5 years</p>
-					<p>Designer's tips</p>
-				</div>
+				<ul class="plan_options">
+					<li>Purchase + delivery</li>
+					<li>Service</li>
+					<li>Warranty 6 years</li>
+					<li>Designer's tips</li>
+				</ul>
 				<button class="cost_button">Add</button>
 			</article>
         </div>
@@ -183,26 +192,26 @@
 			</fieldset>
 			<fieldset class="contact_sending">
 				<img src="./imagesOK/red_chair.png">
-				<label>
+				<div class="form_agreement">
 					<input type="checkbox" id="agree">
-					I agree to the processing of personal data
-				</label>
+					<label for="agree">I agree to the processing of personal data</label>
+				</div>
 				<button class="contact_button">Send</button>
 			</fieldset>
 		</form>
 	</section>
 
-   <footer>
-    <div class="copyright">
-      <p>Copyright 2014 | All Rights Reserved. -Sit On Chair</p>
-      <p>
-        <a href="#"><img id="flickr" src="image/pobrane.png"></a>
-        <a href="#"><img id="vimeo" src="image/vimeo-icon.png"></a>
-        <a href="#"><img id="pinterest" src="image/pinterest.png"></a>
-        <a href="#"><img src="http://wisdomwayscenter.org/uploads/images/Social%20Media%20Icons/twitter.png" id="tweeter"></a>
-      </p>
-      <p id="footter_sitOn">SIT <b>ON</b> CHAIR</p>
-    </div>
-  </footer>
+	<footer class="s6_footer">
+		<p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+		<div class="footer_links">
+			<div class="social_links">
+				<a href="#"><img src="imagesOk/flickr.png"></a>
+				<a href="#"><img src="imagesOk/vimeo.png"></a>
+				<a href="#"><img src="imagesoK/pinterest.png"></a>
+				<a href="#"><img src="imagesOk/twitter.png"></a>
+			</div>
+			<div class="footer_logo"><a href="#">Sit <span>on</span> chair</a></div>
+		</div>
+	</footer>
 </body>
 </html>

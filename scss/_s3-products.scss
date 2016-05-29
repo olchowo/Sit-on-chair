@@ -13,7 +13,7 @@
 		flex-basis: 335px;
 		height: 230px;
 		justify-content: flex-end;
-		border: 1px solid hotpink;
+		//border: 1px solid hotpink;
 		position: relative;
 		
 		.article_title {
@@ -40,17 +40,18 @@
 		border: 1px solid lightgray;
 		
 		p {
-			padding-top: 10px;
+			padding: 10px 10px 10px 0;
+			color: gray;
 		}
 	}
 }
 
 h3 {
-		font-family: $font;
-		font-size: 16px;
-		font-weight: bold;
-		color: black;
-		padding-bottom: 5px;
+	font-family: $font;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
 	}
 	
 p {
@@ -59,10 +60,3 @@ p {
 	font-size: 14px;
 	color: black;
 }
-
-.little_underbar {
-	height: 6px;
-	width: 150px;
-	background-color: $color;
-}
-

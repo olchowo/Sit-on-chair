@@ -1,10 +1,9 @@
 .s5_contact {
-	min-height: 520px;
+	min-height: 500px;
 	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
-	padding: 70px;
-	padding-top: 30px;
+	padding: 30px 70px;
 }
 
 .contact_form {
@@ -19,18 +18,18 @@
 	flex-flow: column nowrap;
 	
 	input {
+		@extend %form-border;
 		width: 680px;
-		height: 45px;
-		font: 20px $font;
-		border: 1px solid lighten($color, 30);
+		height: 60px;
+		font: 24px $font;
 		padding-left: 10px;
 		margin-bottom: 15px;
 	}
 	
 	textarea {
+		@extend %form-border;
 		width: 680px;
-		font: 20px $font;
-		border: 1px solid lighten($color, 30);
+		font: 24px $font;
 		padding: 10px;
 	}
 }
@@ -38,39 +37,67 @@
 .contact_sending {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
 	width: 340px;
+	margin-bottom: 10px;
 	
+	img {
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+	}
+	
+	.form_agreement {
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		margin: 20px 0;
+	}
 	
 	input[type=checkbox] {
-    	display: none;
+    	visibility: hidden;
+		margin: 10px;
   	}
 	
-  	input[type=checkbox] {
-       background-color: hotpink;
-       height: 30px;
-       width: 30px;
-       display:inline-block;
-       padding: 0 0 0 0px;
-   }
-   
-	input[type=checkbox]:checked {
-        background-color: crimson;
-        height: 30px;
-        width: 30px;
-        display:inline-block;
-        padding: 0 0 0 0px;
+  	input[type=checkbox]::before {
+		@extend %form-border;
+		content: "";
+		visibility: visible;
+		height: 30px;
+		width: 30px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		position: relative;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+	input[type=checkbox]:checked::before {
+		content: "";
+		background-image: url(../imagesOk/form_ok.jpg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 30px;
+		width: 30px;
+		display:inline-block;
+		padding: 0 0 0 0px;
     }
 	
-	/*
-	#agree {
-		width: 30px;
-		height: 30px;
-		border: 1px solid lighten($color, 30);
-		background-color: white;
-		background-image: url(../imagesOk/form_ok.jpg);
-		background-position: center;
-		background-size: contain;
+	label {
+		font-family: $font;
+		font-size: 16px;
+		line-height: 1.2;
+		color: gray;
+		margin: 0 0 10px 10px;
 	}
-	*/
+	
+	.contact_button {
+		@extend %button;
+		width: 100%;
+		height: 60px;
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
 }
-

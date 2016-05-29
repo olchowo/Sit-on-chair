@@ -5,11 +5,9 @@
 	flex-flow: column nowrap;
 	padding: 70px;
 	padding-top: 30px;
-	background-color: rgb(241, 241, 241);
+	background-color: #F8F8F8;
 }
 
-
-	
 .cost_tabs {
 	display: flex;
 	flex-flow: row nowrap;
@@ -23,7 +21,7 @@
 		background-color: white;
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: flex-start;
+		justify-content: space-between;
 		align-items: center;
 		
 		.round_top {
@@ -42,7 +40,8 @@
 			color: $color;
 			font-size: 20px;
 			text-transform: uppercase;
-			margin: 10px 0;
+			font-weight: bold;
+			margin: 20px 0;
 		}
 		
 		.cost_sticker {
@@ -76,8 +75,74 @@
 			.pln {
 				text-transform: uppercase;
 				font-weight: bold;
+				font-size: 12px;
 				color: lightgray;
 				//border: 1px solid hotpink;
+			}
+		}
+		
+		.plan_options {
+			margin: 40px 0;
+			width: 100%;
+			height: 160px;
+			font-family: $font;
+			font-size: 20px;
+			
+			li {
+				padding: 10px;
+				text-align: center;
+				color: gray;
+				background-color: #F8F8F8;
+				
+				&:nth-child(2n+1) {
+					background-color: #E8E8E8;
+				}
+			}
+		}
+		
+		.cost_button{
+			@extend %button;
+			width: 40%;
+			height: 40px;
+			font-size: 12px;
+			position: relative;
+			bottom: 20px;
+		}
+	}
+	
+	article.alter_cost {
+		background-color: $color;
+		
+		.round_top {
+			background-color: white;
+			border: 1px solid $color;
+			box-shadow: inset 0 0 0 12px $color;
+		}
+		
+		.plan {
+			color: azure;
+		}
+		
+		.cost_sticker {
+			border-color: white;
+			background-color: white;
+			
+			.price, .pln {
+				color: $color;
+			}
+		}
+		
+		.cost_button {
+			background-color: white;
+			color: $color;
+			font-weight: bold;
+		}
+		
+		.plan_options li {
+			background-color: #E8E8E8;
+			
+			&:nth-child(2n+1) {
+				background-color: #F8F8F8;
 			}
 		}
 	}
