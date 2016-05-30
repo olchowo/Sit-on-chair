@@ -35,6 +35,10 @@
 		
 		li {
 			padding: 10px 0 10px 30px;
+			
+			a:hover {
+				color: lighten($color, 40);
+			}
 		}
 	}
 	

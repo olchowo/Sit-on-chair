@@ -138,11 +138,15 @@
 			font-weight: bold;
 		}
 		
-		.plan_options li {
-			background-color: #E8E8E8;
-			
-			&:nth-child(2n+1) {
-				background-color: #F8F8F8;
+		.plan_options {
+			border: 2px solid $color;
+		
+			li {
+				background-color: #E8E8E8;
+
+				&:nth-child(2n+1) {
+					background-color: #F8F8F8;
+				}
 			}
 		}
 	}
