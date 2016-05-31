@@ -39,6 +39,11 @@ body {
 	outline: none;
 	border: none;
 	
+	&:hover {
+		background-color: darken($color, 5);
+		box-shadow: 0 0 7px darken($color, 5);
+	}
+	
 	&:active {
 		background-color: lightgray;
 		color: azure;

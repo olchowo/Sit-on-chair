@@ -1,4 +1,4 @@
-header.m-header {
+header.s2_header {
 	width: 100%;
 	height: 500px;
 	background: rgba(249,249,249,1);
@@ -15,13 +15,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 	justify-content: space-between;
 	align-items: center;
 	
-	.arrow_left, .arrow_right {
+	#arrow_left, #arrow_right {
 		font-family: $font;
 		font-size: 70px;
 		color: $color;
+		cursor: pointer;
 	}
 	
 	.header_text {
+		max-width: 50%;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -53,6 +55,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 			@extend %button;
 			font-size: 24px;
 			padding: 15px 45px;
+		}
+	}
+	
+	.header-slider {
+		height: 400px;
+		width: 400px;
+		overflow: hidden;
+		border: 1px solid hotpink;
+		
+		.chair-slides {
+			font-size: 0;
+			width: 1200px;
+			height: 400px;
+			display: flex;
+			
+			li {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 	}
 	

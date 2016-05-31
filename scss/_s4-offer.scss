@@ -136,6 +136,11 @@
 			background-color: white;
 			color: $color;
 			font-weight: bold;
+			
+			&:hover {
+				box-shadow: 0 0 7px white;
+				background-color: white;
+			}
 		}
 		
 		.plan_options {
