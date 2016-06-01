@@ -13,12 +13,24 @@ $(function() {
 	var headerArrowL = $("#arrow_left");
 	var headerArrowR = $("#arrow_right");
 	var headerSlides = $(".chair-slides").find("li");
-	var headerCount = 0;
+	var headerCount = 1;
 	
 	headerArrowL.on("click", function() {
-		console.log("tra-la-la");
-		headerCount++;
-		if (headerCount > 2) {
+		if (headerCount < 1) {
+			headerSlides.animate({
+				left: "-=800px"
+			}, 400);
+			headerCount = 2;
+		} else {
+			headerSlides.animate({
+			left: "+=400px"
+			}, 400);
+			headerCount--;
+		};
+	});
+	
+	headerArrowR.on("click", function() {
+		if (headerCount > 1) {
 			headerSlides.animate({
 				left: "+=800px"
 			}, 400);
@@ -27,26 +39,9 @@ $(function() {
 			headerSlides.animate({
 			left: "-=400px"
 			}, 400);
+			headerCount++;
 		};
 	});
-	
-	/* THIS PART NEEDS FIXING:
-	headerArrowR.on("click", function() {
-		console.log("pam-pa-ram");
-		
-		if (headerCount > 1) {
-			headerSlides.animate({
-				right: "-=800px"
-			}, 400);
-			headerCount = 2;
-		} else {
-			headerSlides.animate({
-			right: "+=400px"
-			}, 400);
-			headerCount--;
-		};
-	});
-	*/
 	
 	
 	//vanishing photo titles in section "s3_products"

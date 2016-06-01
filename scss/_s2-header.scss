@@ -62,13 +62,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 		height: 400px;
 		width: 400px;
 		overflow: hidden;
-		border: 1px solid hotpink;
 		
 		.chair-slides {
 			font-size: 0;
 			width: 1200px;
 			height: 400px;
 			display: flex;
+			position: relative;
+			right: 400px;
 			
 			li {
 				width: 400px;
