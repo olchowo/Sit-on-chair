@@ -1,0 +1,120 @@
+.s5_orderform {
+	height: 520px;
+	padding: 30px 70px 70px 70px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #F8F8F8;
+	
+	&:children {
+		flex-basis: 335px;
+	}
+	
+	.create_form {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	
+	.order_form {
+		margin: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		position: relative;
+		left: -10px;
+		
+		label {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		
+		label:not([for=transport])::before {
+			content: "";
+			visibility: visible;
+			width: 20px;
+			height: 20px;
+			border: 10px solid transparent;
+			border-top-color: $color;
+			position: relative;
+			top: 50px;
+			left: 280px;
+		}
+		
+		select {
+			display: inline-block;
+			width: 100%;;
+			height: 60px;
+			@extend %form-border;
+			font: 24px $font;
+			padding-left: 10px;
+			color: gray;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			
+			option {
+				font-size: 16px;
+				color: black;
+			}
+		}
+
+		.check_transport {
+			margin-top: 20px;
+			padding: 0 10px;
+			
+			label {
+				font: 24px $font;
+				color: gray;
+				position: relative;
+				top: 5px;
+			}
+		}
+	}
+	
+	.order_photo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	table {
+		width: 335px;
+		padding: 10px 0;
+		margin-bottom: 20px;
+		background-color: white;
+		font: 24px $font;
+		color: gray;
+		
+		td, th {
+			padding: 5px 15px;
+			height: 45px;			
+		}
+		
+		.option_name {
+			width: 200px;
+			border-right: 1px solid #E8E8E8;
+		}
+		
+		.option_cost, .cost_total {
+			text-align: right;
+			width: 100px;
+			color: $color;
+		}
+		
+		.cost_total {
+			font-weight: bold;
+		}
+		
+		.order_model {
+			text-align: left;
+			color: $color;
+			font-weight: bold;
+		}
+		
+		.cost_summary {
+			border-top: 1px solid #E8E8E8;
+			
+			span {
+				font-size: 18px;
+			}
+		}
+	}
+}

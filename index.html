@@ -119,7 +119,7 @@
         </div>
 	</section>
   
-  <!--
+<!--
   <section class="main_width form_chair">
     <p class="kontakt">SKOMPONUJ SWOJE KRZESŁO</p>
     <p class="kontakt_podkreslenie"></p>
@@ -178,8 +178,73 @@
     </div>
   </section>
   -->
-  
-	<section class="s5_contact main_width">
+
+	<section class="s5_orderform">
+		<div class="create_form">
+			<h2>Create your own chair</h2>
+			<div class="big_underbar"></div>
+			<form class="order_form">
+				<label>
+					<select name="chair_model">
+						<option hidden class="placeholder">Select model</option>
+						<option value="1">Egg</option>
+						<option value="2">Oval</option>
+						<option value="3">Wing</option>
+					</select>
+				</label>
+				<label>
+					<select name="chair_color">
+						<option hidden class="placeholder">Select color</option>
+						<option value="1">Black</option>
+						<option value="2">Gray</option>
+						<option value="3">Pink</option>
+						<option value="3">Orange</option>
+					</select>
+				</label>
+				<label>
+					<select name="chair_textile">
+						<option hidden class="placeholder">Select cover textile</option>
+						<option value="1">Cotton</option>
+						<option value="2">Hemp</option>
+						<option value="3">Silk</option>
+					</select>
+				</label>
+				<div class="check_transport">
+					<input type="checkbox" id="transport">
+				<label for="transport">Transport</label>
+				</div>
+			</form>
+		</div>
+		<div class="order_photo">
+			<img src="imagesOk/black-egg.jpg">
+		</div>
+		<div class="order_summary">
+			<div class="summary_title">
+				<h2>Summary</h2>
+				<div class="big_underbar"></div>
+			</div>
+			<table class="order_table">
+				<tr class="order_model">
+					<th class="option_name">Egg</th><td class="option_cost">1500</td>
+				</tr>
+				<tr class="order_color">
+					<td class="option_name">Black</td><td class="option_cost">0</td>
+				</tr>
+				<tr class="order_textile">
+					<td class="option_name">Silk</td><td class="option_cost">200</td>
+				</tr>
+				<tr class="order_transport">
+					<td class="option_name">Transport</td><td class="option_cost">50</td>
+				</tr>
+				<tr class="cost_summary">
+					<td>Total <span>(in PLN)</span></td><td class="cost_total">1750</td>
+				</tr>
+			</table>
+			<button class="confirm_form">Order now</button>
+		</div>
+	</section>
+
+	<section class="s6_contact main_width">
 		<h2>Contact</h2>
 		<div class="big_underbar"></div>
 		<form class="contact_form">
@@ -194,12 +259,12 @@
 					<input type="checkbox" id="agree">
 					<label for="agree">I agree to the processing of personal data</label>
 				</div>
-				<button class="contact_button">Send</button>
+				<button class="confirm_form">Send</button>
 			</fieldset>
 		</form>
 	</section>
 
-	<footer class="s6_footer">
+	<footer class="s7_footer">
 		<p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
 		<div class="footer_links">
 			<div class="social_links">

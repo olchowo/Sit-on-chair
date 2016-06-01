@@ -1,0 +1,57 @@
+.s6_contact {
+	min-height: 500px;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 30px 70px;
+}
+
+.contact_form {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact_inputs {
+	display: flex;
+	flex-flow: column nowrap;
+	
+	input {
+		@extend %form-border;
+		width: 680px;
+		height: 60px;
+		font: 24px $font;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+	
+	textarea {
+		@extend %form-border;
+		width: 680px;
+		font: 24px $font;
+		padding: 10px;
+	}
+}
+
+.contact_sending {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	width: 340px;
+	margin-bottom: 5px;
+	
+	img {
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+	}
+	
+	.form_agreement {
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		margin: 20px 0;
+	}
+}
