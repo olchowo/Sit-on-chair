@@ -69,7 +69,8 @@
 		}
 	}
 	
-	.order_photo {
+	#order_photo {
+		flex-basis: 335px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

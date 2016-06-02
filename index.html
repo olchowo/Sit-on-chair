@@ -118,104 +118,44 @@
 			</article>
         </div>
 	</section>
-  
-<!--
-  <section class="main_width form_chair">
-    <p class="kontakt">SKOMPONUJ SWOJE KRZESŁO</p>
-    <p class="kontakt_podkreslenie"></p>
-    <div class="formularz">
-      <form class="form">
-          <select name="chair_type" id="model">
-          <option value="0">Wybierz model</option>
-          <option value="1" id="clair1">Clair</option>
-          <option value="2" id="margarita">Margarita</option>
-          <option value="3" id="selena">Selena</option>
-        </select>
-         <select name="chair_color">
-           <option value="0">Wybierz color</option>
-          <option value="1">Red</option>
-          <option value="2">Hot pink</option>
-          <option value="3">Orange</option>
-        </select>
-        <select name="chair_model">
-          <option value="0">Wybierz materiał</option>
-          <option value="1">Lorem</option>
-          <option value="2">Lorem1</option>
-          <option value="3">Lorem2</option>
-        </select>
-      </form>
-      <img src="image/red.png" class="img_red_chair chair2">
-    
-      <div class="tabela">
-    
-        <table>
-           <thead>
-             <td class="kreska" id="twoj_fotel">Twój Fotel<td>
-             <td></td>
-          </thead>
-          <tfoot>
-            <td>SUMA</td>
-            <td></td>
-          </tfoot>
-          <tr>
-            <td  class="kreska"></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td  class="kreska"></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="kreska"></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-      <div class="trans">
-        <input type="checkbox" id="transport">
-        <label for="transport">Transport</label>
-      </div>
-    </div>
-  </section>
-  -->
-
+ 
 	<section class="s5_orderform">
 		<div class="create_form">
 			<h2>Create your own chair</h2>
 			<div class="big_underbar"></div>
 			<form class="order_form">
 				<label>
-					<select name="chair_model">
+					<select name="chair_model" class="chair_model">
 						<option hidden class="placeholder">Select model</option>
-						<option value="1">Egg</option>
-						<option value="2">Oval</option>
-						<option value="3">Wing</option>
+						<option value="1" data-price="1500" data-name="Egg">Egg</option>
+						<option value="2" data-price="1700" data-name="Oval">Oval</option>
+						<option value="3" data-price="1900" data-name="Wing">Wing</option>
 					</select>
 				</label>
 				<label>
-					<select name="chair_color">
+					<select name="chair_color" class="chair_color">
 						<option hidden class="placeholder">Select color</option>
-						<option value="1">Black</option>
-						<option value="2">Gray</option>
-						<option value="3">Pink</option>
-						<option value="3">Orange</option>
+						<option value="1" data-name="Black">Black</option>
+						<option value="2" data-name="Gray">Gray</option>
+						<option value="3" data-name="Pink">Pink</option>
+						<option value="3" data-name="Orange">Orange</option>
 					</select>
 				</label>
 				<label>
-					<select name="chair_textile">
+					<select name="chair_textile" class="chair_textile">
 						<option hidden class="placeholder">Select cover textile</option>
-						<option value="1">Cotton</option>
-						<option value="2">Hemp</option>
-						<option value="3">Silk</option>
+						<option value="1" data-price="0" data-name="Cotton">Cotton</option>
+						<option value="2" data-price="100" data-name="Hemp">Hemp</option>
+						<option value="3" data-price="200" data-name="Silk">Silk</option>
 					</select>
 				</label>
 				<div class="check_transport">
-					<input type="checkbox" id="transport">
+					<input type="checkbox" id="transport" data-price="50">
 				<label for="transport">Transport</label>
 				</div>
 			</form>
 		</div>
-		<div class="order_photo">
+		<div id="order_photo">
 			<img src="imagesOk/black-egg.jpg">
 		</div>
 		<div class="order_summary">
